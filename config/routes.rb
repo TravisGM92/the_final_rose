@@ -3,5 +3,8 @@ Rails.application.routes.draw do
 
   #bachelorettes
   get '/bachelorettes/:id', to: 'bachelorette#show'
-  get 'bachelorette/:id/contestants', to: 'contestants#index'
+  get 'bachelorette/:id/contestants', to: 'contestant#index'
+
+  #contestants
+  get '/contestant/:id', to: 'contestant#show'
 end
