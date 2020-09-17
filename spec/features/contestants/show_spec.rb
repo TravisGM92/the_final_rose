@@ -14,15 +14,15 @@ RSpec.describe "Contestant show page" do
         outing_2 = contestant_1.outings.create!(name: "Hot Springs")
         outing_3 = contestant_1.outings.create!(name: "Helicopter Ride")
 
-          visit "/contestant/#{contestant_1.id}"
+        visit "/contestant/#{contestant_1.id}"
 
-          expect(page).to have_content(contestant_1.name)
-          expect(page).to have_content(bachelorette_1.season_number)
-          expect(page).to have_content(bachelorette_1.description)
+        expect(page).to have_content(contestant_1.name)
+        expect(page).to have_content(bachelorette_1.season_number)
+        expect(page).to have_content(bachelorette_1.description)
 
-          expect(page).to have_content(outing_1.name)
-          expect(page).to have_content(outing_2.name)
-          expect(page).to have_content(outing_3.name)
+        expect(page).to have_content(outing_1.name)
+        expect(page).to have_content(outing_2.name)
+        expect(page).to have_content(outing_3.name)
         end
       end
     end
