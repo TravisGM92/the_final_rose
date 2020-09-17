@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   #contestants
   get '/contestant/:id', to: 'contestant#show'
+
+  #outing
+  get '/outing/:id', to: 'outing#show'
 end
