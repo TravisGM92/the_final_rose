@@ -3,5 +3,5 @@
 <h2>Season description:<%=@bachelorette.description%></h2>
 <h2>Outings <%=@contestant.name%> has participated in:</h2>
 <%@contestant.outings.each do |outing| %>
-<h3><%=outing.name%></h3>
+<h3><%= link_to "#{outing.name}", "/outing/#{outing.id}" %></h3>
 <%end %>
