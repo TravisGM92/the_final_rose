@@ -1,0 +1,8 @@
+<h1><%=@outing.name%></h1>
+<h2><%=@outing.location%></h2>
+<h2><%=@outing.date%></h2>
+<h2>Number of contestants on this outing: <%=@outing.contestants.count%></h2>
+
+<%@contestants.each do |person| %>
+<h2><%= person.name%></h2>
+<%end %>
