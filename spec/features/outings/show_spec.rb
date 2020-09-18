@@ -25,6 +25,7 @@ RSpec.describe "Outing show page" do
 
         expect(page).to have_content(contestant_1.name)
         expect(page).to have_content(contestant_2.name)
+        expect(page).to have_content("Number of contestants on this outing: 2")
         end
       end
     end
